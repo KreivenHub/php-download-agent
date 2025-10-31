@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 set_time_limit(180);
 libxml_use_internal_errors(true);
 
-define('AGENT_SECRET_KEY', 'YourSuperSecretKey123!@#');
+define('AGENT_SECRET_KEY', '1234567');
 
 $request_key = $_SERVER['HTTP_X_AGENT_KEY'] ?? '';
 if ($request_key !== AGENT_SECRET_KEY) {
